@@ -29,7 +29,7 @@ The fourth segment is irrelevant as long as it's the correct length...
 ## How to use
 As I said before, UWAct is split into three python scripts:
 
-+ keygen.py,
++ No.1 > keygen.py,
   which is the service that calculates valid keys following W95's Product Key algo
 
 + No.2 > gui.py,
