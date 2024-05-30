@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+import argparse
+
+
+def run_cli():
+    import keygen
+    print(keygen.generate_cd_key())
+    print(keygen.generate_oem_key())
+
+
+def run_gui():
+    import gui
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-g", "--gui", action="store_true", help="Run the GUI version")
+    args = parser.parse_args()
+
+    if args.gui:
+        run_gui()
+    else:
+        run_cli()
